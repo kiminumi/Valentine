@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            font-family: "Loveya", sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            margin: 50px;
+        }
+        h1 {
+            font-size: 10em; /* Bigger text */
+            color: #ff4d94;
+        }
+        .buttons {
+            margin-top: 50px;
+        }
+        button {
+            font-size: 3.6em; /* Bigger button text */
+            padding: 100px 200px;
+            margin: 40px;
+            border: none;
+            border-radius: 200px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #ff4d94;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #ff1a75;
+        }
+        .no {
+            background-color: #999;
+            color: white;
+        }
+        .no:hover {
+            background-color: #666;
+        }
+        #response {
+            font-size: 5.0em; /* Bigger response text */
+            margin-top: 100px;
+            color: #ff4d94;
+            font-weight: bold;
+        }
+        .cat-img {
+            max-width: 50%; /* Makes it responsive */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CAN I BE YOUR VALENTINE?!?! 💖</h1>
+    <img src="https://c.tenor.com/Ej3BJBhwt_0AAAAC/cute-kitty.gif">
+    <div class="buttons">
+        <button class="YES!!!" onclick="answerYes()">YES!!!</button>
+        <button class="no... </3" onclick="answerNo()">no...💔</button>
+    </div>
+    <p id="response"></p>
+
+    <script>
+        function answerYes() {
+            document.getElementById("response").innerHTML = "YYYYYAAAAAAAAAAYYYYYYY!!!!!! <3333 🎉💖";
+        }
+        function answerNo() {
+            document.getElementById("response").innerHTML = ":((";
+        }
+    </script>
+</body>
+</html>
